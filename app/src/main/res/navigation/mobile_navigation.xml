@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.raissa.happyfinal.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.raissa.happyfinal.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.raissa.happyfinal.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_my_rep"
+        android:name="com.raissa.happyfinal.ui.myRep.MyRepFragment"
+        android:label="@string/menu_my_rep"
+        tools:layout="@layout/fragment_my_rep" />
+
+    <fragment
+        android:id="@+id/nav_ads"
+        android:name="com.raissa.happyfinal.ui.ads.AdsFragment"
+        android:label="@string/menu_ads"
+        tools:layout="@layout/fragment_ads" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.raissa.happyfinal.ui.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_sign_out"
+        android:name="com.raissa.happyfinal.ui.signOut.SignOutFragment"
+        android:label="@string/menu_sign_out"
+        tools:layout="@layout/fragment_sign_out" />
+</navigation>
