@@ -4,21 +4,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        getSupportActionBar()?.hide();
     }
 
-    fun changeToForgotPassword()
+    fun changeToForgotPassword(view: View)
     {
         val intent = Intent(this, ForgotPasswordActivity::class.java)
 
         intent.change();
     }
 
-    fun changeToRegister()
+    fun changeToRegister(view: View)
     {
         val intent = Intent(this, RegisterUserActivity::class.java)
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorSecondaryAccent"
-    tools:context=".RegisterUserActivity">
+    tools:context=".RegisterRepActivity">
 
     <View
         android:id="@+id/topView"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
-        android:text="Cadastro"
+        android:text="Cadastro de Repúblicas"
         android:textColor="@color/colorPrimary"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -44,14 +44,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/inputEmail"
+        android:id="@+id/inputNameRep"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
+        android:hint="Nome"
+        android:inputType="textPersonName"
         android:padding="16dp"
         android:textColorHint="@color/colorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,60 +60,23 @@
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
     <EditText
-    android:id="@+id/inputName"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="16dp"
-    android:layout_marginEnd="32dp"
-    android:background="@drawable/round_border"
-    android:ems="10"
-    android:hint="Nome"
-    android:inputType="textPersonName"
-    android:padding="16dp"
-    android:textColorHint="@color/colorSecondary"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/inputEmail" />
-
-    <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/inputEnd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
-        android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPassword"
+        android:hint="Endereço"
+        android:inputType="textPersonName"
         android:padding="16dp"
         android:textColorHint="@color/colorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputName" />
-
-    <EditText
-        android:id="@+id/inputPasswordAgain"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/round_border"
-        android:ems="10"
-        android:hint="Repita Senha"
-        android:inputType="textPassword"
-        android:padding="16dp"
-        android:textColorHint="@color/colorSecondary"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@id/inputNameRep" />
 
     <Button
-        android:id="@+id/btnSaveUser"
+        android:id="@+id/btnSaveRep"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -125,6 +89,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputPasswordAgain" />
+        app:layout_constraintTop_toBottomOf="@id/inputEnd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
