@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
 
     fun changeToLogin()
     {
-//        val intent = Intent(this, LoginActivity::class.java)
-//
-//        Handler().postDelayed(
-//                {
-//                    intent.change();
-//                }, 2000
-//        )
+        val intent = Intent(this, LoginActivity::class.java)
+
+        Handler().postDelayed(
+                {
+                    intent.change();
+                }, 2000
+        )
     }
 
     fun changeToMenu()
