@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class HelpViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "Por favor se tiver algum problema entre em contato com a gente! \n Pelo telefone: (19) 98325-5521 \n E-mail: dovalleraissa@gmail.com"
     }
     val text: LiveData<String> = _text
 }
