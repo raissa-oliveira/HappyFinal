@@ -13,4 +13,6 @@
     <string name="menu_ads">Classificados</string>
     <string name="menu_help">Ajuda</string>
     <string name="menu_sign_out">Sair</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

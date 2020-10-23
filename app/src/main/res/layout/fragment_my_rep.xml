@@ -4,19 +4,226 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.myRep.MyRepFragment">
+    tools:context=".ui.myRep.MyRepFragment"
+    android:background="@color/colorPrimaryDark">
 
-    <TextView
-        android:id="@+id/text_my_rep"
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:numColumns="auto_fit"
+        android:rowCount="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/colorSecondary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:clickable="true"
+                android:onClick="goToBills">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_baseline_attach_money_24"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Contas"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="5"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/colorSecondary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:clickable="true"
+                android:onClick="goToCleaning">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_broom"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Limpeza"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/colorSecondary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:clickable="true"
+                android:onClick="goToMembers">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_baseline_people_24"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Membros"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/colorSecondary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:clickable="true"
+                android:onClick="goToMeetings">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_meeting"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Reuniões"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/colorSecondary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:clickable="true"
+                android:onClick="goToShopping">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_baseline_shopping_cart_24"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Compras"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
